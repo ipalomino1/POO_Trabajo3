@@ -1,0 +1,27 @@
+
+
+
+double COD;
+    String NOM;
+    double HM;
+    double VT;
+    double PR;
+    double SB;
+    double SR;
+    
+    COD = Double.parseDouble(txtCOD.getText());
+    NOM = (txtNOM.getText());
+    HM = Double.parseDouble(txtHM.getText());
+    VT = Double.parseDouble(txtVT.getText());
+    PR = Double.parseDouble(txtPR.getText());
+    
+    SB = HM*VT;
+        
+    SR = SB*(1-(PR/100));
+    
+    
+    txtSB.setText(String.valueOf(SB));
+    txtSR.setText(String.valueOf(SR));   
+    
+    
+    
