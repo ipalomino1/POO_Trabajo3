@@ -1,0 +1,41 @@
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+
+        int A;
+        int B;
+        
+        A = Integer.parseInt(txtA.getText());
+        B = Integer.parseInt(txtB.getText());
+        
+        
+        if (A > B){
+            txtR.setText(String.valueOf("El valor de A es mayor que B"));
+        }
+            else if (A == B){
+                txtR.setText(String.valueOf("El valor de A es igual que B"));
+            }
+                else if ( B > A){
+                    txtR.setText(String.valueOf("El valor de A es menor que B"));
+        }
+                
+   
+    }                                        
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+
+    System.exit(0); 
+
+        // TODO add your handling code here:
+    }                                        
+
+    private void txtAActionPerformed(java.awt.event.ActionEvent evt) {                                     
+        // TODO add your handling code here:
+    }                                    
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+
+    txtA.setText("");
+    txtB.setText("");
+    txtR.setText("");
+
+ 
+    } 
