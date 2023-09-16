@@ -1,7 +1,6 @@
-
-
-
-double COD;
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    
+    double COD;
     String NOM;
     double HM;
     double VT;
@@ -25,3 +24,29 @@ double COD;
     
     
     
+
+
+        
+    }                                        
+
+    private void txtBorrarActionPerformed(java.awt.event.ActionEvent evt) {                                          
+
+    txtCOD.setText("");
+    txtNOM.setText("");
+    txtHM.setText("");
+    txtVT.setText("");
+    txtPR.setText("");
+    txtSB.setText("");
+    txtSR.setText("");  
+    
+    
+    
+    }                                         
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+
+
+    System.exit(0);
+
+        // TODO add your handling code here:
+    }  
