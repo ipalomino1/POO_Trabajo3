@@ -1,0 +1,57 @@
+   private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+
+        double A;
+        double B;
+        double C;
+        double ANS1;
+        double ANS2;
+        double DIS;
+        
+
+        
+        A = Integer.parseInt(txtA.getText());
+        B = Integer.parseInt(txtB.getText());
+        C = Integer.parseInt(txtC.getText());
+
+
+        DIS = Math.sqrt(Math.pow(B,2)-(4*A*C));
+        
+        ANS1 = (-B + DIS)/(2*A);
+        ANS2 = (-B - DIS)/(2*A);  
+        
+        txtD.setText(String.valueOf("El discriminante es :" + DIS));
+        
+        if (DIS>0){
+            txtR.setText(String.valueOf("Las posibles soluciones son: "+ANS1+" y "+ANS2));
+        }
+        else if (DIS<0){
+            txtR.setText(String.valueOf("No tiene solución en los reales" )); 
+        }
+        else{
+            txtR.setText(String.valueOf("La posible solucion es: "+ANS1 ));
+        }
+        
+
+
+        // TODO add your handling code here:
+    }                                        
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+
+    txtA.setText("");
+    txtB.setText("");
+    txtC.setText("");
+    txtD.setText("");
+    txtR.setText("");
+
+
+
+        // TODO add your handling code here:
+    }                                        
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+
+    System.exit(0);        
+
+
+    }    
