@@ -1,0 +1,53 @@
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+
+
+          int NI;
+          String NOM;
+          int PAT;
+          int ES;
+          double PAGMAT;
+          
+          
+          
+          
+          NI = Integer.parseInt(txtNI.getText());
+          NOM = (txtNOM.getText());
+          PAT = Integer.parseInt(txtPAT.getText());
+          ES = Integer.parseInt(txtES.getText());
+          
+          
+          PAGMAT = 50000;
+          
+          
+        if ((PAT > 2000000) && (ES > 3 )){ 
+           PAGMAT = PAGMAT + 0.03*PAT;
+       }
+        txtR.setText(String.valueOf("El estudiante con número de inscripción:" + NI + ", y nombre "+ NOM + ", debe pagar $" +PAGMAT));
+
+
+
+
+
+        // TODO add your handling code here:
+    }                                        
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+
+    txtNI.setText("");
+    txtNOM.setText("");
+    txtPAT.setText("");
+    txtES.setText("");
+    txtR.setText("");
+
+
+
+
+        // TODO add your handling code here:
+    }                                        
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+
+    System.exit(0);        
+
+        // TODO add your handling code here:
+    } 
