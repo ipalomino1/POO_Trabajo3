@@ -1,0 +1,131 @@
+//Clase Principal
+
+    private void btnCirculoActionPerformed(java.awt.event.ActionEvent evt) {                                           
+
+    Circulo circulo = new Circulo();
+    circulo.setVisible(true);
+
+
+    }                                          
+
+    private void btnRectanguloActionPerformed(java.awt.event.ActionEvent evt) {                                              
+
+    Rectangulo rectangulo = new Rectangulo();
+    rectangulo.setVisible(true);
+
+    }                                             
+
+    private void btnCuadradoActionPerformed(java.awt.event.ActionEvent evt) {                                            
+
+    Cuadrado cuadrado = new Cuadrado();
+    cuadrado.setVisible(true);       
+ 
+    }                                           
+
+    private void btnTrianguloRActionPerformed(java.awt.event.ActionEvent evt) {                                              
+
+    TrianguloR triangulor = new TrianguloR();
+    triangulor.setVisible(true);       
+    }
+
+//Clase Circulo
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {
+        double Radio;
+        double Area;
+        double Perimetro;
+
+        Radio = Double.parseDouble(txtRadio.getText());
+        
+        Area = Math.PI*Math.pow(Radio,2);
+        
+        Perimetro = 2*Math.PI*Radio;
+        
+        txtArea.setText(String.valueOf(Area));
+        txtPerimetro.setText(String.valueOf(Perimetro));
+
+
+    }  
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    System.exit(0);        
+    }   
+
+//Clase Rectangulo
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+
+        int Base;
+        int Altura;
+        double Area;
+        double Perimetro;
+        
+        Base = Integer.parseInt(txtBase.getText());
+        Altura = Integer.parseInt(txtAltura.getText());
+
+        Area = Base*Altura;
+        Perimetro = 2*Base+2*Altura;
+        
+        txtArea.setText(String.valueOf(Area));
+        txtPerimetro.setText(String.valueOf(Perimetro));
+    }  
+   private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    System.exit(0);        
+    }    
+
+//Clase Cuadrado
+
+   private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        int Lado;
+
+        double Area;
+        double Perimetro;
+        
+        Lado = Integer.parseInt(txtLado.getText());
+
+
+        Area = Lado*Lado;
+        Perimetro = 4*Lado;
+        
+        txtArea.setText(String.valueOf(Area));
+        txtPerimetro.setText(String.valueOf(Perimetro));
+
+    }        
+private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    System.exit(0);         
+    }    
+
+//Clase triangulo
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+
+        int Base;
+        int Altura;
+        double Hipotenusa;
+        double Area;
+        double Perimetro;
+        
+        Base = Integer.parseInt(txtBase.getText());
+        Altura = Integer.parseInt(txtAltura.getText());
+        
+        Hipotenusa = Math.sqrt(Math.pow(Base,2)+Math.pow(Altura,2));
+        
+        
+        
+        Area = (Base*Altura)/2;
+        
+        Perimetro = Base + Altura + Hipotenusa;
+
+        if ((Base == Altura) && (Altura == Hipotenusa) && (Base == Hipotenusa)){
+            txtTipo.setText(String.valueOf("El triangulo es equilatero"));
+        }
+            else if ((Base != Altura) && (Base != Hipotenusa) && (Altura != Hipotenusa)){
+               txtTipo.setText(String.valueOf("El triangulo es escaleno")); 
+            }
+            else{
+                txtTipo.setText(String.valueOf("El triangulo es isósceles"));
+            }
+
+    }
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+    System.exit(0);
+    }         
